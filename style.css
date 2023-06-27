@@ -1,0 +1,543 @@
+                        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,800;0,900;0,1000;1,900;1,1000&display=swap');
+                         :root {
+                            --green: rgb(14, 248, 111);
+                            --black: #2c2c54;
+                        }
+                        
+                        * {
+                            font-family: 'Nunito', sans-serif;
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                            outline: none;
+                            border: none;
+                            text-decoration: none;
+                            text-transform: capitalize;
+                            transition: all 2.s linear;
+                        }
+                        
+                        *::selection {
+                            background: var( --green);
+                            color: white;
+                        }
+                        
+                        html {
+                            font-size: 62.5%;
+                            overflow-x: hidden;
+                            scroll-padding-top: 6.5rem;
+                            scroll-behavior: smooth;
+                        }
+                        
+                        .header-1 {
+                            background: rgb(170, 165, 165);
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 2rem 9%;
+                        }
+                        
+                        .logo {
+                            color: var(--black);
+                            font-weight: bolder;
+                            font-size: 3rem;
+                        }
+                        
+                        .logo i {
+                            padding-right: .5rem;
+                            color: var(--green);
+                        }
+                        
+                        .header-1 .search-box-container {
+                            display: flex;
+                            height: 5rem;
+                        }
+                        
+                        .header-1 .search-box-container #search-box {
+                            height: 50%;
+                            width: 100%;
+                            padding: 1rem;
+                            font-size: 2rem;
+                            color: #333;
+                            border: 1rem solid rgba(0, 0, 0, .3);
+                            text-transform: none;
+                        }
+                        
+                        .header-1 .search-box-container label {
+                            height: 80%;
+                            width: 5rem;
+                            font-size: 1rem;
+                            line-height: 5rem;
+                            color: #fff;
+                            background: var(--green);
+                            text-align: center;
+                            font-size: 20px;
+                            cursor: pointer;
+                        }
+                        
+                        .header-1 .search-box-container label:hover {
+                            background: var(--black);
+                            font-size: 20px;
+                        }
+                        
+                        .header-2 {
+                            background: #eee;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 1rem 5%;
+                            position: relative;
+                            box-shadow: 0, 5rem, 1rem rgba(0, 0, 0, .1);
+                        }
+                        
+                        .header-2 .navbar a {
+                            padding: .5rem 1.5rem;
+                            font-size: 2rem;
+                            border-radius: .5rem;
+                            color: var(--black);
+                            text-decoration: none;
+                        }
+                        
+                        .header-2 .navbar a:hover {
+                            background: var(--green);
+                            color: #fff;
+                        }
+                        
+                        li a,
+                        .dropbtn {
+                            display: inline-block;
+                            color: white;
+                            padding: 12px 14px;
+                            text-decoration: none;
+                            white-space: 0;
+                        }
+                        
+                        li a:hover,
+                        .dropdown:hover .dropbtn {
+                            background-color: var(--green);
+                        }
+                        
+                        li.dropdown {
+                            display: inline-block;
+                        }
+                        
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            background-color: #f9f9f9;
+                            min-width: 160px;
+                            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                            z-index: 1;
+                            overflow: hidden;
+                        }
+                        
+                        .dropdown-content a {
+                            color: black;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+                            text-align: left;
+                        }
+                        
+                        .dropdown-content a:hover {
+                            background-color: #f1f1f1;
+                        }
+                        
+                        .dropdown:hover .dropdown-content {
+                            display: block;
+                        }
+                        
+                        .header-2 .navbar .icon a {
+                            padding-left: 8rem;
+                        }
+                        
+                        .header-2 .icons a {
+                            font-size: 2.5rem;
+                            color: var(--black);
+                            padding-left: 3rem;
+                            text-decoration: none;
+                        }
+                        
+                        .header-2 .icons a:hover {
+                            color: var(--green);
+                            font-size: 3rem;
+                            text-decoration: none;
+                        }
+                        
+                        .imgslider {
+                            width: 60%;
+                            height: 600px;
+                            background-image: url(https://www.pacificmalls.in/dwarka/images/slider/426891613841504slider.jpg);
+                            background-size: 100% 100%;
+                            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                            animation: changeImage 20s linear infinite;
+                            width: auto;
+                            height: 100vh;
+                            display: grid;
+                            place-items: center;
+                            padding: 0;
+                            margin: 0;
+                            box-sizing: border-box;
+                        }
+                        
+                        @keyframes changeImage {
+                            0% {
+                                background-image: url("https://lh3.googleusercontent.com/p/AF1QipOP3y4JIXrcxK_eVtrCR3w9p7j8jXl6DuliQmF1=w1080-h608-p-no-v0");
+                            }
+                            25% {
+                                background-image: url("https://www.pacificmalls.in/dwarka/images/slider/426891613841504slider.jpg");
+                            }
+                            50% {
+                                background-image: url("https://helplinerojgar.com/wp-content/uploads/2022/02/hd1.jpg");
+                            }
+                            75% {
+                                background-image: url("https://previews.123rf.com/images/zgel/zgel1905/zgel190500107/123523970-handsome-caucasian-grocery-delivery-courier-man-in-blue-uniform-with-grocery-wooden-box-with-fresh-f.jpg");
+                            }
+                            100% {
+                                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqp5ekRGxgP3gflg4r7pUmPVKnaUjnM9jFO5TbQ31krj3orJ60Gbx5jEoByOkkGJaPeSM&usqp=CAU");
+                            }
+                        }
+                        
+                        .banner-container {
+                            display: flex;
+                            gap: 2rem;
+                            flex-wrap: wrap;
+                        }
+                        
+                        .banner-container .banner {
+                            flex: 1 1 40rem;
+                            height: 25rem;
+                            overflow: hidden;
+                            position: relative;
+                        }
+                        
+                        .banner-container .banner img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            border: 1rem solid white;
+                        }
+                        
+                        .banner-container .banner .coontent {
+                            position: absolute;
+                            top: 20%;
+                            left: 35%;
+                            transform: translate(-50%);
+                            text-align: center;
+                        }
+                        
+                        .banner-container .banner .coontent h2 {
+                            font-size: 3rem;
+                            color: var(--black);
+                        }
+                        
+                        .banner-container .banner:hover img {
+                            transform: scale(1.2) rotate(-3deg);
+                        }
+                        
+                        h1 {
+                            height: 50%;
+                            font-size: 50px;
+                            color: black;
+                            padding: 8% 20%;
+                        }
+                        
+                        h1:hover {
+                            color: var(--green);
+                            padding-left: 8px;
+                        }
+                        
+                        .button {
+                            background-color: var(--green);
+                            border: white solid 3px;
+                            color: white;
+                            padding: 15px 32px;
+                            text-align: center;
+                            text-decoration: solid;
+                            display: inline-block;
+                            font-size: 16px;
+                            margin: 4px 2px;
+                            cursor: pointer;
+                        }
+                        
+                        .button:hover {
+                            transform: scale(1, 0.8);
+                            background-color: var(--black);
+                        }
+                        
+                        .heading {
+                            text-align: center;
+                            color: var(--black);
+                            text-transform: uppercase;
+                            padding: 1rem;
+                            font-size: 1.5rem;
+                        }
+                        
+                        .heading span {
+                            color: var(--green);
+                            text-transform: uppercase;
+                        }
+                        
+                        .category .box-container {
+                            display: flex;
+                            gap: 1.5rem;
+                            flex-wrap: wrap;
+                        }
+                        
+                        .category .box-container .box {
+                            border: 1rem solid rgba(0, 0, 0, .1);
+                            text-align: center;
+                            padding: 2rem;
+                            flex: 1 1 25rem;
+                            width: 10%;
+                            height: 5%;
+                        }
+                        
+                        .category .box-container .box img {
+                            margin: 5rem 0;
+                        }
+                        
+                        .category .box-container .box h3 {
+                            font-size: 1.5rem;
+                            color: var(--black);
+                        }
+                        
+                        .category .box-container .box button {
+                            display: block;
+                        }
+                        
+                        .footer-container {
+                            max-width: 1170px;
+                            margin: auto;
+                            background-color: grey;
+                        }
+                        
+                        .row {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        
+                        ul {
+                            list-style: none;
+                        }
+                        
+                        .foter {
+                            background-color: grey;
+                            padding: 70px 0;
+                            margin: 0;
+                            box-sizing: border-box;
+                        }
+                        
+                        .footer-col {
+                            width: 25%;
+                            padding: 0 10px;
+                        }
+                        
+                        .footer-col h3 {
+                            font-size: 18px;
+                            color: white;
+                            text-transform: capitalize;
+                            margin-bottom: 35px;
+                            font-weight: 500;
+                            position: relative;
+                            flex-wrap: wrap;
+                        }
+                        
+                        .footer-col h3::before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: -10px;
+                            background-color: #e91e63;
+                            height: 2px;
+                            box-sizing: border-box;
+                            width: 50px;
+                        }
+                        
+                        .footer-col ul li:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                        
+                        .footer-col ul li a {
+                            font-size: 14px;
+                            text-transform: capitalize;
+                            color: #ffffff;
+                            text-decoration: none;
+                            font-weight: 300;
+                            color: black;
+                            display: block;
+                            transition: all 0.3s ease;
+                        }
+                        
+                        .footer-col ul li a:hover {
+                            background-color: grey;
+                            color: var(--green);
+                            padding-left: 8px;
+                        }
+                        
+                        .footer-col .social-link a {
+                            height: 40px;
+                            width: 40px;
+                            background-color: rgba(255, 255, 255, .0.2);
+                            margin: 0 10px 10px 0;
+                            text-align: center;
+                            line-height: 40px;
+                            border-radius: 50%;
+                            color: #ffffff;
+                            transition: all 0.3s ease;
+                            display: inline-block;
+                        }
+                        
+                        .footer-col .social-link a:hover {
+                            color: var(--green);
+                        }
+                        
+                        @media(max-width:1200px) {
+                            html {
+                                font-size: 55%;
+                            }
+                        }
+                        
+                        @media(max-width:991px) {
+                            .header-1,
+                            .header-2 {
+                                padding: 2rem;
+                            }
+                        }
+                        
+                        @media(max-width:768px) {
+                            html {
+                                font-size: 50%;
+                            }
+                            .header-2 {
+                                flex-flow: column;
+                                word-spacing: 6rem;
+                            }
+                            .header-2 .navbar a {
+                                font-size: 1.5rem;
+                                display: inline-block;
+                                text-align: left;
+                                padding-left: 2rem;
+                            }
+                            .dropdown-content {
+                                position: absolute;
+                                width: 200px;
+                                z-index: 1;
+                                height: auto;
+                            }
+                            .dropdown-content a {
+                                font-size: 1rem;
+                                text-align: center;
+                                display: inline-block;
+                                padding-left: 0%;
+                                overflow: hidden;
+                                word-spacing: 10px;
+                            }
+                            .dropdown-content a:hover {
+                                background-color: #f1f1f1;
+                                width: 200px;
+                            }
+                            .header-2 .icons {
+                                margin-top: 1.5rem;
+                                padding-left: 24rem;
+                            }
+                            .button {
+                                padding: 15px 32px;
+                            }
+                            .footer-col {
+                                width: 25%;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        
+                        @media(max-width:450px) {
+                            html {
+                                font-size: 50%;
+                            }
+                            .heading {
+                                font-size: 2.5rem;
+                            }
+                            .header-1 {
+                                flex-flow: column;
+                            }
+                            .header-1 .search-box-container {
+                                width: 80%;
+                                margin-top: 2rem;
+                            }
+                            .logo {
+                                font-size: 2rem;
+                            }
+                            .header-2 {
+                                height: 100%;
+                                flex-flow: column;
+                                word-spacing: 3rem;
+                            }
+                            .header-2 .navbar {
+                                font-size: 1.6rem;
+                                padding: 0;
+                                display: inline-block;
+                                word-spacing: 0.8rem;
+                            }
+                            .header-2 .navbar a {
+                                font-size: 0.8rem;
+                            }
+                            .dropdown-content {
+                                position: absolute;
+                                width: 80px;
+                                z-index: 1;
+                                height: auto;
+                            }
+                            .dropdown-content a {
+                                font-size: 1rem;
+                                text-align: center;
+                                display: inline-block;
+                                padding-left: 0%;
+                                overflow: hidden;
+                                word-spacing: 10px;
+                            }
+                            .dropdown-content a:hover {
+                                background-color: #f1f1f1;
+                                width: 200px;
+                            }
+                            .header-2 .icons {
+                                width: 100%;
+                                margin-top: 2rem;
+                                padding-left: 5rem;
+                                font-size: 0.8rem;
+                            }
+                            .header-2 .icons a {
+                                font-size: 1rem;
+                                padding-left: 3rem;
+                                text-decoration: none;
+                            }
+                            .header-2 .icons a:hover {
+                                color: var(--green);
+                                text-decoration: none;
+                                font-size: 2rem;
+                                background-color: #eee;
+                            }
+                            .category .box-container .box {
+                                border: 1rem solid rgba(0, 0, 0, .1);
+                                text-align: center;
+                                padding: 1rem;
+                                flex: 1 1 13rem;
+                                font-size: 2rem;
+                                width: 10rem;
+                            }
+                            .category .box-container .box img {
+                                width: 10rem;
+                                margin: 5rem 0;
+                            }
+                            .button {
+                                padding: 2px 4px;
+                                text-align: center;
+                                border: white solid 1px;
+                                text-decoration: solid;
+                                display: inline-block;
+                                font-size: 16px;
+                                margin: 2px 1px;
+                                cursor: pointer;
+                            }
+                            .footer-col {
+                                width: 100%;
+                            }
+                        }
